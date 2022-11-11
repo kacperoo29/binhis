@@ -1,0 +1,33 @@
+[package]
+name = "binhis"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.13.1"
+yew = "0.19.3"
+js-sys = "0.3.60"
+gloo-events = "0.1.2"
+wasm-bindgen = "0.2.83"
+log = "0.4.6"
+wasm-logger = "0.2.0"
+image = { version = "0.24.4", default-features = false, features = ["jpeg", "png", "bmp", "gif"] } 
+
+[dependencies.web-sys]
+version = "0.3.60"
+features = [
+    "Element", 
+    "EventTarget",
+    "HtmlElement", 
+    "Node",
+
+    "Window",
+    "HtmlCanvasElement",
+    "CanvasRenderingContext2d",
+    "ImageData",
+    "DomMatrix",
+
+    "HtmlSelectElement"
+]
